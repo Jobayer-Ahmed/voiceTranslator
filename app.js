@@ -15,5 +15,5 @@ app.post('/translated', (req, res)=>{
     console.error(err);
   });
 })
-app.listen(3000,()=>{console.log('Server Connected')})
+app.listen(process.e­nv.PORT || 3000,()=>{console.lo­g(`Server connected on port $ {process.env.PORT}`­)});
 
